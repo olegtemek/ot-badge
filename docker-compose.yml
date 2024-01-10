@@ -1,0 +1,34 @@
+version: '3.5'
+services:
+
+  postgres:
+    container_name: postgres
+    image: postgres
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - '4001:5432'
+    volumes:
+      - ./.docker/db/:/var/lib/postgresql/data/
+    networks:
+      - app_network
+
+  api:
+    container_name: api
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    ports:
+      - '4000:3001'
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+    command: sh -c "sleep 10 && npx prisma migrate deploy && npm run start:prod"
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    name: app_network

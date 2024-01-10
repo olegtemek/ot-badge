@@ -1,0 +1,65 @@
+{{#if (eq style "FLAT")}}
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="40">
+      <g>
+        <rect class="icon" fill="{{ iconColor }}" x="20" width="{{ rectWidth }}" height="40"/>
+        <rect class="label" fill="{{ labelColor }}" width="40" height="40" />
+
+        <svg x="10" y="10" width="20" height="20" viewBox="0 0 141 161" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_34_4)">
+          <path d="M70.5 80.5C81.1844 80.5 91.4313 76.2594 98.9863 68.711C106.541 61.1627 110.786 50.925 110.786 40.25C110.786 29.575 106.541 19.3373 98.9863 11.789C91.4313 4.24061 81.1844 0 70.5 0C59.8156 0 49.5687 4.24061 42.0137 11.789C34.4587 19.3373 30.2143 29.575 30.2143 40.25C30.2143 50.925 34.4587 61.1627 42.0137 68.711C49.5687 76.2594 59.8156 80.5 70.5 80.5ZM56.1167 95.5938C25.1156 95.5938 0 120.687 0 151.661C0 156.818 4.18594 161 9.34754 161H131.652C136.814 161 141 156.818 141 151.661C141 120.687 115.884 95.5938 84.8833 95.5938H56.1167Z" fill="#D9D9D9"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_34_4">
+          <rect width="141" height="161" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg>
+          
+      </g>
+      <text x="48" y="25" fill="#FFFFFF" font-family="Verdana,Geneva,DejaVu Sans,sans-serif">{{ visitors }}</text>
+    </svg>
+{{/if}}
+
+{{#if (eq style "REGULAR")}}
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="40">
+      <g>
+        <rect class="icon" fill="{{ iconColor }}" rx="8" x="20" width="{{ rectWidth }}" height="40"/>
+        <rect class="label" fill="{{ labelColor }}" rx="8" width="40" height="40" />
+
+        <svg x="10" y="10" width="20" height="20" viewBox="0 0 141 161" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_34_4)">
+          <path d="M70.5 80.5C81.1844 80.5 91.4313 76.2594 98.9863 68.711C106.541 61.1627 110.786 50.925 110.786 40.25C110.786 29.575 106.541 19.3373 98.9863 11.789C91.4313 4.24061 81.1844 0 70.5 0C59.8156 0 49.5687 4.24061 42.0137 11.789C34.4587 19.3373 30.2143 29.575 30.2143 40.25C30.2143 50.925 34.4587 61.1627 42.0137 68.711C49.5687 76.2594 59.8156 80.5 70.5 80.5ZM56.1167 95.5938C25.1156 95.5938 0 120.687 0 151.661C0 156.818 4.18594 161 9.34754 161H131.652C136.814 161 141 156.818 141 151.661C141 120.687 115.884 95.5938 84.8833 95.5938H56.1167Z" fill="#D9D9D9"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_34_4">
+          <rect width="141" height="161" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg>
+          
+      </g>
+      <text x="48" y="25" fill="#FFFFFF" font-family="Verdana,Geneva,DejaVu Sans,sans-serif">{{ visitors }}</text>
+    </svg>
+{{/if}}
+  
+{{#if (eq style "ITALIC")}}
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="40">
+      <g>
+        <rect class="icon" fill="{{ iconColor }}" rx="8" x="20" width="{{ rectWidth }}" height="40"/>
+        <rect class="label" fill="{{ labelColor }}" rx="8" width="40" height="40" />
+
+        <svg x="10" y="10" width="20" height="20" viewBox="0 0 141 161" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_34_4)">
+          <path d="M70.5 80.5C81.1844 80.5 91.4313 76.2594 98.9863 68.711C106.541 61.1627 110.786 50.925 110.786 40.25C110.786 29.575 106.541 19.3373 98.9863 11.789C91.4313 4.24061 81.1844 0 70.5 0C59.8156 0 49.5687 4.24061 42.0137 11.789C34.4587 19.3373 30.2143 29.575 30.2143 40.25C30.2143 50.925 34.4587 61.1627 42.0137 68.711C49.5687 76.2594 59.8156 80.5 70.5 80.5ZM56.1167 95.5938C25.1156 95.5938 0 120.687 0 151.661C0 156.818 4.18594 161 9.34754 161H131.652C136.814 161 141 156.818 141 151.661C141 120.687 115.884 95.5938 84.8833 95.5938H56.1167Z" fill="#D9D9D9"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_34_4">
+          <rect width="141" height="161" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg>
+          
+      </g>
+      <text x="48" y="25" fill="#FFFFFF" font-style="italic" font-family="Verdana,Geneva,DejaVu Sans,sans-serif">{{ visitors }}</text>
+    </svg>
+{{/if}}
