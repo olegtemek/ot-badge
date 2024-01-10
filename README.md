@@ -9,7 +9,7 @@
 
 Returns a badge containing the visitor counter for your repository
 
-[![Ot-Badge-Visits](https://badges.olegtemek.site/visitor/olegtemek/olegtemek)](https://olegtemek.site)
+[![Ot-Badge-Visits](https://badges.olegtemek.site/visitor/olegtemek/ot-badge)](https://olegtemek.site)
 
 <p><b>Link: </b><code>https://badges.olegtemek.site/visitor/{username}/{repo}</code></p>
 
