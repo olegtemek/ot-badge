@@ -7,7 +7,7 @@
 Unfortunately for the time being Ot Badge is suspending its operations. Maybe in the future I will add something new and start it up again
 
 Ot Badge looked like this:
-![ot-badge-example](./example-1.png)
+![ot-badge-example](./example.png)
 
 <br />
 
